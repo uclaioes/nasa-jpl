@@ -1,6 +1,6 @@
 ## 2021-22 Team
 1. Kierstin Blatzheim
-1. Jasmine Summers-Evans (she/her)
+1. Jasmine Summers-Evans 
 1. Max Menczer
 1. Sophia Winter
 1. Cade Mills
