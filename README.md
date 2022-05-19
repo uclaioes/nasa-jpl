@@ -1,16 +1,14 @@
-# NASA/JPL Project
-
 ## 2021-22 Team
-1. Madison Castelazo
-1. Ka Hei Ng
-1. Emily Gin
-1. Lily Sperling
-1. Rachel Lu
-1. Vanessa Saucedo
-1. George Shenusay
+1. Kierstin Blatzheim
+1. Jasmine Summers-Evans 
+1. Max Menczer
+1. Sophia Winter
+1. Cade Mills
+1. Rachel Han
+1. Albert Cao
 
 ## Advisor
-1. Robert Eagle
+1. Yuwei Kong and Dr. Jennifer Jay 
 
 ## Support
 1. Scott Gruber
