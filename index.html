@@ -1,242 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
 
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Using remote sensing to monitor antibiotic resistance
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Using remote sensing to monitor antibiotic resistance
             vectors in Southern California coastal waters">
 
-        <title>Home | Water Quality Monitoring with Remote Sensing</title>
+  <title>Home | Water Quality Monitoring with Remote Sensing</title>
 
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <!-- Bootstrap CSS -->
-        <!-- <link rel="stylesheet"
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <!-- <link rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
             integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
             crossorigin="anonymous"> -->
-        <link
-              href="bootstrap/css/bootstrap.min.css"
-              rel="stylesheet">
-    </head>
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap"
-          rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/style.css" type="text/css">
 
-    </head>
+</head>
 
-    <body>
-    <div class="container grid">
+<body>
+  <div class="container grid">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <!-- Logo -->
-            <a class="navbar-brand" href="index.html">
-                <img src="img/ioes-alt-caption.svg" class="img-fluid" id="logo"
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="img/ioes-alt-caption.svg" class="img-fluid" id="logo"
                      alt="UCLA IoES" />
-            </a>
-            <!-- Navigation Toggle -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Navigation Links -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page"
-                           href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="turbidity-app.html">TurbidityApp</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                           role="button" data-bs-toggle="dropdown"
-                           aria-expanded="false">Explore</a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="methods.html">Methods</a></li>
-                            <li><a class="dropdown-item" href="library.html">Library</a></li>
-                            <li><a class="dropdown-item" href="tools.html">Tools</a></li>
-                            <li><a class="dropdown-item" href="resources.html">Resources</a></li>
-                        </ul>
-            </div>
+        </a>
+        <!-- Navigation Toggle -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navigation Links -->
+        <div class="d-flex justify-self-end collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
-            </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="turbidity-app.html">TurbidityApp</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="methods.html">Methods</a></li>
+                <li><a class="dropdown-item" href="library.html">Library</a></li>
+                <li><a class="dropdown-item" href="tools.html">Tools</a></li>
+                <li><a class="dropdown-item" href="resources.html">Resources</a></li>
+              </ul>
         </div>
+        </li>
+        </ul>
+      </div>
     </nav>
 
 
-<!--Introduction -->
-<main class="my-5">
-<h1>Nasa JPL Practicum Team</h1>
-<div class="p-4 card bordered">
-    <p>In recent years, there has been a rise in the
-        prevalence of antibiotic resistant bacteria (ARBs)
-        that is jeopardizing our ability to treat infections
-        and diseases (Meek, et al. 2015). We need to
-        understand how ARBs are transported through the
-        environment in order to research the effects they
-        have on the human body. During storm events, ARBs
-        that accumulate on land enter coastal waters through
-        runoff pathways and can be ingested or inhaled by
-        people during recreational ocean activities. An
-        example of an antibiotic resistant bacteria is
-        methicillin-resistant Staphylococcus aureus (MRSA),
-        which causes skin infections and can be
-        life-threatening. A prior practicum team found that
-        people who surfed during and soon after wet weather
-        events were over six times more likely to carry MRSA
-        in their nasal cavities than surfers who avoided the
-        water during this time.
-    </p>
-    <p>
-        Our practicum team will use findings from the
-        previous project and couple it with new remote
-        sensing satellite data to expand future water
-        quality analysis. Currently, easy and immediate
-        access to information on water quality is
-        unavailable. Field sampling provides accurate water
-        quality data, but it can be costly and is
-        infrequently collected. A cheaper, more accessible
-        option for analyzing water quality is remote
-        sensing, which involves collecting imagery of large
-        spatial areas from NASA’s satellites. The
-        relationship between harmful contaminant plumes and
-        satellite data will be investigated by
-        simultaneously collecting water samples as
-        satellites pass over the Southern California coast.
-        This project aims to advance the application of
-        satellite data modeling for public health, and has
-        the potential to better inform the public about how
-        they can protect themselves from harmful pathogens
-        in coastal waters.
+    <!--Introduction -->
+    <main class="my-5">
+      <h1>Nasa JPL Practicum Team</h1>
+      <div class="p-4 card bordered">
+        <p>In recent years, there has been a rise in the
+          prevalence of antibiotic resistant bacteria (ARBs)
+          that is jeopardizing our ability to treat infections
+          and diseases (Meek, et al. 2015). We need to
+          understand how ARBs are transported through the
+          environment in order to research the effects they
+          have on the human body. During storm events, ARBs
+          that accumulate on land enter coastal waters through
+          runoff pathways and can be ingested or inhaled by
+          people during recreational ocean activities. An
+          example of an antibiotic resistant bacteria is
+          methicillin-resistant Staphylococcus aureus (MRSA),
+          which causes skin infections and can be
+          life-threatening. A prior practicum team found that
+          people who surfed during and soon after wet weather
+          events were over six times more likely to carry MRSA
+          in their nasal cavities than surfers who avoided the
+          water during this time.
+        </p>
+        <p>
+          Our practicum team will use findings from the
+          previous project and couple it with new remote
+          sensing satellite data to expand future water
+          quality analysis. Currently, easy and immediate
+          access to information on water quality is
+          unavailable. Field sampling provides accurate water
+          quality data, but it can be costly and is
+          infrequently collected. A cheaper, more accessible
+          option for analyzing water quality is remote
+          sensing, which involves collecting imagery of large
+          spatial areas from NASA’s satellites. The
+          relationship between harmful contaminant plumes and
+          satellite data will be investigated by
+          simultaneously collecting water samples as
+          satellites pass over the Southern California coast.
+          This project aims to advance the application of
+          satellite data modeling for public health, and has
+          the potential to better inform the public about how
+          they can protect themselves from harmful pathogens
+          in coastal waters.
 
-    </p>
-
-
-    <p><b>Student Team</b>: Kierstin Blatzheim, Albert Cao,
-        Jasmine
-        Summer-Evans, Max Menczer, Rachel Han, Cade Mills,
-        Savannah McCarthy, and Sophia Winter</p>
-
-    <p><b>Client</b>: NASA’s Jet Propulsion Laboratory (JPL)
-    </p>
-
-    <p><b>Advisor</b>: Yuwei Kong</p>
-
-</div>
+        </p>
 
 
+        <p><b>Student Team</b>: Kierstin Blatzheim, Albert Cao,
+          Jasmine
+          Summer-Evans, Max Menczer, Rachel Han, Cade Mills,
+          Savannah McCarthy, and Sophia Winter</p>
 
+        <p><b>Client</b>: NASA’s Jet Propulsion Laboratory (JPL)
+        </p>
 
+        <p><b>Advisor</b>: Yuwei Kong</p>
 
+      </div>
 
+      <!-- Team Info -->
+      <section class="container mt-5" id="team">
+        <h1 class="mt-5 mb-4">Who We Are</h1>
 
+        <div class="grid">
+          <div class="p-4 card bordered">
 
+            <p>We are the UCLA IoES 2021-2022 Water Quality Monitoring with Remote Sensing practicum team. With the help of the <a href="https://www.santamonicabay.org/" target="_blank">Bay Foundation</a> and <a href="https://www.ioes.ucla.edu/" target="_blank">UCLA's Institute of the Environment and Sustainability</a>, we aim to engage the public in restoration research through a resourceful and interactive website. This scientific communication resource relays the importance of aquatic vegetation in supporting marine ecosystems, benefitting human economies, and mitigating damages due to climate change!</p>
+            <p>Watch the video below to understand the origins of our practicum research and inspirations, and how these goals shifted due to COVID-19:</p>
 
+            <!-- Video -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/aW25cuHp7Cs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
 
-        <!-- Team Info -->
-
-<section class="container mt-5" id="team">
-
-<h1>Who We Are</h1>
-
-
-<div class="grid">
-<div class="p-4 card bordered">
-
-<p>We are the UCLA IoES 2021-2022 Water Quality Monitoring with Remote Sensing practicum team. With the help of the <a
-href="https://www.santamonicabay.org/" target="_blank">Bay Foundation</a> and <a href="https://www.ioes.ucla.edu/" target="_blank">UCLA's Institute of the Environment and Sustainability</a>, we aim to engage the public in restoration research through a resourceful and interactive website. This scientific communication resource relays the importance of aquatic vegetation in supporting marine ecosystems, benefitting human economies, and mitigating damages due to climate change!</p>
-<p>Watch the video below to understand the origins of our practicum research and inspirations, and how these goals shifted due to COVID-19:</p>
-
-<!-- Video -->
-<div class="embed-responsive embed-responsive-16by9">
-<iframe width="560" height="315"
-src="https://www.youtube-nocookie.com/embed/aW25cuHp7Cs"
-title="YouTube video player" frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen></iframe>
-</div>
-
-</div>
-</div>
-</section>
-
-<!-- Team Members -->
-<section  class="container pt-3" id="members">
-
-
-<h2>Team Members</h2>
-
-
-<div class="card h-100 bordered mb-4">
-  <div class="row">
-  <div class="col-xs-12 col-md-4">
-    <img srcset="img/about/Kierstin-Blaztzheim.jpg 2x" src="img/about/Kierstin-Blaztzheim@0.5x.jpg" class="card-img img-fluid" alt="Kierstin Blatzheim">
-  </div>
-  
-  <div class="col-xs-12 col-md-8 p-4">
-    <h3 class="card-title name mb-0">Kierstin Blkatzheim</h3>
-    <p class="role mb-3">Remote Sensing Analyst</p>
-    <p class="card-text">Kierstin Blatzheim is a southern Delaware native graduating from UCLA with a degree in Environmental Science and a concentration in Environmental Engineering. She believes in approaching problems from a variety of perspectives and especially enjoys design work. When she isn’t collecting water samples or in the lab, she likes going to the beach, camping, and hiking.</p>
-  </div>
-</div> 
-</div>
-
-
-
-
-<div class="card h-100 bordered mb-4">
-<div class="row">
-<div class="col-xs-12 col-md-4">
-<img srcset="img/about/Albert-Cao.jpg 2x" src="img/about/Albert-Cao@0.5x.jpg" class="card-img img-fluid" alt="Albert Cao">
-</div>
-<div class="col-xs-12 col-md-8 p-4">
-    
-        <h3 class="card-title name mb-0">Albert
-            Cao</h3>
-        <p class="role mb-3">Data Analyst &
-            Web App Developer</p>
-        <p class="card-text">Albert is
-            graudating with a B.S. in
-            Environmental Science, a B.S. in
-            Statistics,
-            and a minor in Environmental
-            Engineering. He's passionate about
-            using data visualizations and
-            modelling
-            to tackle real-wrold problems.
-            Albert enjoys skiing in winter and
-            hiking in spring and fall! </p>
-    </div>
-
-
-</div>
-</div>
-
-
-<div class="card h-100 bordered mb-4">
-    <div class="row">
-        <div class="col-xs-12 col-md-4">
-            <img srcset="img/about/Rachel-Han.jpg 2x" src="img/about/Rachel-Han@0.5x.jpg"
-                 class="card-img img-fluid"
-                 alt="Rachel Han">
+          </div>
         </div>
-        <div class="col-xs-12 col-md-8">
+      </section>
 
-            <h3 class="card-title name mb-0">
+      <!-- Team Members -->
+      <section class="container pt-3 mt-5" id="members">
+        <h2 class="mt-5 mb-4">Team Members</h2>
+
+        <div class="card h-100 mb-5">
+          <div class="row">
+            <div class="col-xs-12 col-md-4">
+              <img srcset="img/about/Kierstin-Blaztzheim.jpg 2x" src="img/about/Kierstin-Blaztzheim@0.5x.jpg" class="card-img img-fluid bordered" alt="Kierstin Blatzheim">
+            </div>
+
+            <div class="col-xs-12 col-md-8 p-4">
+              <h3 class="card-title name mb-0">Kierstin Blkatzheim</h3>
+              <p class="role mb-3">Remote Sensing Analyst</p>
+              <p class="card-text">Kierstin Blatzheim is a southern Delaware native graduating from UCLA with a degree in Environmental Science and a concentration in Environmental Engineering. She believes in approaching problems from a variety of perspectives and especially enjoys design work. When she isn’t collecting water samples or in the lab, she likes going to the beach, camping, and hiking.</p>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="card h-100 mb-5">
+          <div class="row">
+            <div class="col-xs-12 col-md-4">
+              <img srcset="img/about/Albert-Cao.jpg 2x" src="img/about/Albert-Cao@0.5x.jpg" class="card-img img-fluid bordered" alt="Albert Cao">
+            </div>
+            <div class="col-xs-12 col-md-8 p-4">
+
+              <h3 class="card-title name mb-0">Albert
+                Cao</h3>
+              <p class="role mb-3">Data Analyst &
+                Web App Developer</p>
+              <p class="card-text">Albert is
+                graudating with a B.S. in
+                Environmental Science, a B.S. in
+                Statistics,
+                and a minor in Environmental
+                Engineering. He's passionate about
+                using data visualizations and
+                modelling
+                to tackle real-wrold problems.
+                Albert enjoys skiing in winter and
+                hiking in spring and fall! </p>
+            </div>
+
+
+          </div>
+        </div>
+
+
+        <div class="card h-100 mb-5">
+          <div class="row">
+            <div class="col-xs-12 col-md-4">
+              <img srcset="img/about/Rachel-Han.jpg 2x" src="img/about/Rachel-Han@0.5x.jpg"
+                 class="card-img img-fluid bordered"
+                 alt="Rachel Han">
+            </div>
+            <div class="col-xs-12 col-md-8 p-4">
+
+              <h3 class="card-title name mb-0">
                 Rachcel Han</h3>
-            <p class="role mb-3">Remote Sensing
+              <p class="role mb-3">Remote Sensing
                 Analyst &
                 Communications Mangaer
-            </p>
-            <p class="card-text">
+              </p>
+              <p class="card-text">
                 Rachel Han is graduating UCLA with a
                 BS in Environmental Science and a
                 concentration in Atmospheric &
@@ -250,27 +223,27 @@ allowfullscreen></iframe>
                 traveling, playing softball, and
                 going on food adventures with her
                 friends.</p>
+            </div>
+
+          </div>
         </div>
 
-    </div>
-</div>
 
-
-<div class="card h-100 bordered mb-4">
-    <div class="row">
-        <div class="col-xs-12 col-md-4">
-            <img srcset="img/about/Savannah-McCarthy.jpg 2x" src="img/about/Savannah-McCarthy@0.5x.jpg"
-                 class="card-img img-fluid"
+        <div class="card h-100 mb-5">
+          <div class="row">
+            <div class="col-xs-12 col-md-4">
+              <img srcset="img/about/Savannah-McCarthy.jpg 2x" src="img/about/Savannah-McCarthy@0.5x.jpg"
+                 class="card-img img-fluid bordered"
                  alt="Savannah McCarthy">
-        </div>
-        <div class="col-xs-12 col-md-8">
+            </div>
+            <div class="col-xs-12 col-md-8 p-4">
 
-            <h3 class="card-title name mb-0">
+              <h3 class="card-title name mb-0">
                 Savannah McCarthy</h3>
-            <p class="role mb-3">Microbiology
+              <p class="role mb-3">Microbiology
                 Manager & Water Quality Analyst
-            </p>
-            <p class="card-text">Savannah is
+              </p>
+              <p class="card-text">Savannah is
                 graduating from UCLA in June 2022
                 with a B.S. in environmental science
                 with a concentration in
@@ -288,28 +261,28 @@ allowfullscreen></iframe>
                 Outside of her classes, she enjoys
                 surfing, hiking, and sustainable
                 fashion.
-            </p>
+              </p>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
 
 
-<div class="card h-100 bordered mb-4">
-    <div class="row">
-        <div class="col-xs-12 col-md-4">
-            <img srcset="img/about/Max-Menczer.jpg 2x" src="img/about/Max-Menczer@0.5x.jpg"
-                 class="card-img img-fluid"
+        <div class="card h-100 mb-5">
+          <div class="row">
+            <div class="col-xs-12 col-md-4">
+              <img srcset="img/about/Max-Menczer.jpg 2x" src="img/about/Max-Menczer@0.5x.jpg"
+                 class="card-img img-fluid bordered"
                  alt="Max Menczer">
-        </div>
-        <div class="col-xs-12 col-md-8 p-4">
+            </div>
+            <div class="col-xs-12 col-md-8 p-4">
 
-            <h3 class="card-title name mb-0">Max
+              <h3 class="card-title name mb-0">Max
                 Menczer
-            </h3>
-            <p class="role mb-3">Remote Sensing
+              </h3>
+              <p class="role mb-3">Remote Sensing
                 Analyst & Water Quality Analyst
-            </p>
-            <p class="card-text">Max is graduating
+              </p>
+              <p class="card-text">Max is graduating
                 from UCLA with a BS in Environmental
                 Science and a concentration in
                 Environmental Engineering.
@@ -323,27 +296,27 @@ allowfullscreen></iframe>
                 In his free time, Max enjoys
                 traveling, going to the movies, and
                 rock climbing.
-            </p>
+              </p>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
 
 
-<div class="card h-100 bordered mb-4">
-    <div class="row">
-        <div class="col-xs-12 col-md-4">
-            <img srcset="img/about/Cade-Mills.jpg" src="img/about/Cade-Mills@0.5x.jpg"
-                 class="card-img img-fluid"
+        <div class="card h-100 mb-5">
+          <div class="row">
+            <div class="col-xs-12 col-md-4">
+              <img srcset="img/about/Cade-Mills.jpg" src="img/about/Cade-Mills@0.5x.jpg"
+                 class="card-img img-fluid bordered"
                  alt="Cade Mills">
-        </div>
-        <div class="col-xs-12 col-md-8 p-4">
+            </div>
+            <div class="col-xs-12 col-md-8 p-4">
 
-            <h3 class="card-title name mb-0">Cade
+              <h3 class="card-title name mb-0">Cade
                 Mills</h3>
-            <p class="role mb-3">Microbology
+              <p class="role mb-3">Microbology
                 Analyst & Field Manager
-            </p>
-            <p class="card-text">Cade is from San
+              </p>
+              <p class="card-text">Cade is from San
                 Clemente, CA, and has a passion for
                 all things to do with the ocean.
                 He will graduate UCLA with a degree
@@ -356,28 +329,28 @@ allowfullscreen></iframe>
                 Outside of the lab,
                 Cade likes to spend his time
                 surfing, camping, and traveling.
-            </p>
+              </p>
+            </div>
+
+          </div>
         </div>
 
-    </div>
-</div>
 
-
-<div class="card h-100 bordered mb-4">
-    <div class="row">
-        <div class="col-xs-12 col-md-4">
-            <img srcset="img/about/Jasmine-Summers-Evans.jpg" src="img/about/Jasmine-Summers-Evans@0.5x.jpg"
-                 class="card-img img-fluid"
+        <div class="card h-100 mb-5">
+          <div class="row">
+            <div class="col-xs-12 col-md-4">
+              <img srcset="img/about/Jasmine-Summers-Evans.jpg" src="img/about/Jasmine-Summers-Evans@0.5x.jpg"
+                 class="card-img img-fluid bordered"
                  alt="Jasemine Summers-Evans">
-        </div>
-        <div class="col-xs-12 col-md-8 p-4">
+            </div>
+            <div class="col-xs-12 col-md-8 p-4">
 
-            <h3 class="card-title name mb-0">
+              <h3 class="card-title name mb-0">
                 Jasmine Summers-Evans</h3>
-            <p class="role mb-3">Lead Editor &
+              <p class="role mb-3">Lead Editor &
                 Water Quality Analyst
-            </p>
-            <p class="card-text">Jasmine is
+              </p>
+              <p class="card-text">Jasmine is
                 graduating from UCLA with a BS in
                 Environmental Science and a
                 concentration in Environmental
@@ -394,99 +367,91 @@ allowfullscreen></iframe>
                 National Park Service.
                 In her free time, she enjoys
                 backpacking, pottery, and reading.
-            </p>
+              </p>
+            </div>
+
+          </div>
         </div>
 
-    </div>
-</div>
 
-
-<div class="card h-100 bordered mb-4">
-<div class="row">
-<div class="col-xs-12 col-md-4">
-    <img srcset="img/about/Sophia-Winter.jpg" src="img/about/Sophia-Winter@0.5x.jpg"
-            class="card-img img-fluid"
+        <div class="card h-100 mb-5">
+          <div class="row">
+            <div class="col-xs-12 col-md-4">
+              <img srcset="img/about/Sophia-Winter.jpg" src="img/about/Sophia-Winter@0.5x.jpg"
+            class="card-img img-fluid bordered"
             alt="Sophia Winter">
-</div>
-<div class="col-xs-12 col-md-8 p-4">
-   
-        <h3 class="card-title name mb-0">Sophia
-            Winter
-        </h3>
-        <p class="role mb-3">Project
-            Manager
-        </p>
-        <p class="card-text">Sophia is
-            graduating from UCLA with a BS in
-            Environmental Science and a minor in
-            Atmospheric & Oceanic Sciences.
-            She is interested in carbon
-            sequestration technology and the
-            emerging blue carbon market.
-        </p>
-    </div>
-
-</div>
-</div>
-</div>
-
-</section>
-    </main>
-        <!-- Footer -->
-         
-
-    
-        <footer>
-            <div id="seagrass"></div>   
-            
-            <div class="container pt-4">
-                <div class="row">
-                    <!-- Logo -->
-                    <div class="col-xs-12 col-md-2 col-lg-1 pt-3">
-                        <a href="index.html">
-                            <img src="icons/ioes-short.svg" id="logo-short"
-                                 alt="UCLA IoES" />
-                        </a>
-                    </div>
-                    <div class="col-xs-12 col-md-10 col-lg-11 pt-3"
-                         id="sitemap">
-                        <div>UCLA IoES - Water Quality Monitoring with Remote
-                            Sensing</div>
-                        <a href="index.html">Home</a>&nbsp;|
-                        <a href="turbidity-app.html">TurbidityApp</a>&nbsp;|
-                        <a href="tools.html">Tools</a>&nbsp;|
-                        <a href="resources.html">Resources</a>&nbsp;|
-                        <a href="methods.html">Methods</a>&nbsp;|
-                        <a href="library.html">Library</a>&nbsp;|
-                        <a
-                           href="https://github.com/uclaioes/nasa-jpl">GitHub</a>
-                    </div>
-                </div>
-                <div class="row py-3">
-                    <!-- Copyright -->
-                    <div class="col-xs-12 col-md-12 text-center">
-                        <span id="copyright">Copyright 2022 &copy; UCLA
-                            IoES</span>
-                    </div>
-                </div>
             </div>
-        </footer>
+            <div class="col-xs-12 col-md-8 p-4">
 
+              <h3 class="card-title name mb-0">Sophia
+                Winter
+              </h3>
+              <p class="role mb-3">Project
+                Manager
+              </p>
+              <p class="card-text">Sophia is
+                graduating from UCLA with a BS in
+                Environmental Science and a minor in
+                Atmospheric & Oceanic Sciences.
+                She is interested in carbon
+                sequestration technology and the
+                emerging blue carbon market.
+              </p>
+            </div>
+
+          </div>
+        </div>
+  </div>
+
+  </section>
+  </main>
+  <!-- Footer -->
+
+
+
+  <footer>
+    <div id="seagrass"></div>
+
+    <div class="container pt-4">
+      <div class="row">
+        <!-- Logo -->
+        <div class="col-xs-12 col-md-2 col-lg-1 pt-3">
+          <a href="index.html">
+            <img src="icons/ioes-short.svg" id="logo-short"
+                                 alt="UCLA IoES" />
+          </a>
+        </div>
+        <div class="col-xs-12 col-md-10 col-lg-11 pt-3" id="sitemap">
+          <div>UCLA IoES - Water Quality Monitoring with Remote
+            Sensing</div>
+          <a href="index.html">Home</a>&nbsp;|
+          <a href="turbidity-app.html">TurbidityApp</a>&nbsp;|
+          <a href="tools.html">Tools</a>&nbsp;|
+          <a href="resources.html">Resources</a>&nbsp;|
+          <a href="methods.html">Methods</a>&nbsp;|
+          <a href="library.html">Library</a>&nbsp;|
+          <a href="https://github.com/uclaioes/nasa-jpl">GitHub</a>
+        </div>
+      </div>
+      <div class="row py-3">
+        <!-- Copyright -->
+        <div class="col-xs-12 col-md-12 text-center">
+          <span id="copyright">Copyright 2022 &copy; UCLA
+            IoES</span>
+        </div>
+      </div>
     </div>
+  </footer>
 
-        <!-- Bootstrap JS -->
-        <script
-                src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-                integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-                crossorigin="anonymous"></script>
+  </div>
 
-        <script
-                src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-                crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 
 
-    </body>
+</body>
 
 </html>
