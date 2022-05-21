@@ -14,10 +14,6 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <!-- Bootstrap CSS -->
-  <!-- <link rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-            crossorigin="anonymous"> -->
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <!-- Fonts -->
@@ -28,44 +24,43 @@
 </head>
 
 <body>
-  <div class="container grid">
-    <!-- Navigation -->
+  <!-- Navigation -->
+  <div class="container">
     <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <!-- Logo -->
-        <a class="navbar-brand" href="index.html">
-          <img src="img/ioes-alt-caption.svg" class="img-fluid" id="logo"
+      <!-- Logo -->
+      <a class="navbar-brand" href="index.html">
+        <img src="img/ioes-alt-caption.svg" class="img-fluid" id="logo"
                      alt="UCLA IoES" />
-        </a>
-        <!-- Navigation Toggle -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Navigation Links -->
-        <div class="d-flex justify-self-end collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="turbidity-app.html">TurbidityApp</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore</a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="methods.html">Methods</a></li>
-                <li><a class="dropdown-item" href="library.html">Library</a></li>
-                <li><a class="dropdown-item" href="tools.html">Tools</a></li>
-                <li><a class="dropdown-item" href="resources.html">Resources</a></li>
-              </ul>
-        </div>
-        </li>
-        </ul>
+      </a>
+      <!-- Navigation Toggle -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navigation Links -->
+      <div id="navbarNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="turbidity-app.html">TurbidityApp</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="methods.html">Methods</a></li>
+              <li><a class="dropdown-item" href="library.html">Library</a></li>
+              <li><a class="dropdown-item" href="tools.html">Tools</a></li>
+              <li><a class="dropdown-item" href="resources.html">Resources</a></li>
+            </ul>
       </div>
+      </li>
+      </ul>
     </nav>
+  </div>
 
-
-    <!--Introduction -->
+  <!--Introduction -->
+  <div class="container grid">
     <main class="my-5">
       <h1>Nasa JPL Practicum Team</h1>
       <div class="p-4 card bordered">

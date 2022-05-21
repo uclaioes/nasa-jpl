@@ -1,93 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="TurbidityApp built by Albert Cao">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TurbidityApp built by Albert Cao">
 
-        <title>Home | TurbidityApp</title>
+  <title>Home | TurbidityApp</title>
 
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <!-- Bootstrap CSS -->
-         <!-- <link rel="stylesheet"
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <!-- <link rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
             integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
             crossorigin="anonymous"> -->
-            <link
-            href="bootstrap/css/bootstrap.min.css"
-            rel="stylesheet">
-        <!-- Fonts -->
-        <link
-            href="https://fonts.googleapis.com/css?family=Overpass&display=swap"
-            rel="stylesheet">
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" type="text/css">
 
-    </head>
+</head>
 
-    <body>
-        <!-- Navigation -->
-        <div class="container px-0">
-            <nav class="navbar navbar-expand-lg">
-                <!-- Logo -->
-                <a class="navbar-brand" href="index.html">
-                    <img src="img/ioes-alt-caption.svg" class="img-fluid"
-                        id="logo" alt="UCLA IoES" />
-                </a>
-                <!-- Navigation Toggle -->
-                <button class="navbar-toggler" type="button"
-                    data-toggle="collapse" data-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- Navigation Links -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active"
-                                href="turbidity-app.html">TurbidityApp</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#"
-                                id="navbarDropdown" data-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false">Explore</a>
-                            <div class="dropdown-menu"
-                                aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item"
-                                    href="methods.html">Methods</a>
-                                <a class="dropdown-item"
-                                    href="library.html">Library</a>
-                                <a class="dropdown-item"
-                                    href="tools.html">Tools</a>
-                                <a class="dropdown-item"
-                                    href="resources.html">Resources</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+<body>
+  <!-- Navigation -->
+  <div class="container">
+    <nav class="navbar navbar-expand-lg">
+      <!-- Logo -->
+      <a class="navbar-brand" href="index.html">
+        <img src="img/ioes-alt-caption.svg" class="img-fluid" id="logo"
+                          alt="UCLA IoES" />
+      </a>
+      <!-- Navigation Toggle -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navigation Links -->
+      <div id="navbarNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="turbidity-app.html">TurbidityApp</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="methods.html">Methods</a></li>
+              <li><a class="dropdown-item" href="library.html">Library</a></li>
+              <li><a class="dropdown-item" href="tools.html">Tools</a></li>
+              <li><a class="dropdown-item" href="resources.html">Resources</a></li>
+            </ul>
+      </div>
+      </li>
+      </ul>
+    </nav>
+  </div>
+
+  <!--Introduction -->
+  <h2>TurbidityApp</h2>
+  <div class="row">
+    <div class="col-xs-12 col-md-12">
+      <div class="card bordered">
+        <div class="card-body">
+          <iframe style="height: 100vh;" width="100%" height="100%" src="https://caoalbert.shinyapps.io/TurbidityApp/" title="TurbidityApp"></iframe>
         </div>
-
-        <!--Introduction -->
-        <h2>TurbidityApp</h2>
-        <div class="row">
-            <div class="col-xs-12 col-md-12">
-                <div class="card bordered">
-                    <div class="card-body">
-                        <iframe style="height: 100vh;" width="100%"
-                            height="100%"
-                            src="https://caoalbert.shinyapps.io/TurbidityApp/"
-                            title="TurbidityApp"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -99,58 +82,48 @@
 
 
 
-        <!-- Footer -->
-        <div id="seagrass"></div>
-        <footer>
-            <div class="container pt-4">
-                <div class="row">
-                    <!-- Logo -->
-                    <div class="col-xs-12 col-md-2 col-lg-1 pt-3">
-                        <a href="index.html">
-                            <img src="img/ioes-short.svg" id="logo-short"
+  <!-- Footer -->
+  <div id="seagrass"></div>
+  <footer>
+    <div class="container pt-4">
+      <div class="row">
+        <!-- Logo -->
+        <div class="col-xs-12 col-md-2 col-lg-1 pt-3">
+          <a href="index.html">
+            <img src="img/ioes-short.svg" id="logo-short"
                                 alt="UCLA IoES" />
-                        </a>
-                    </div>
-                    <div class="col-xs-12 col-md-10 col-lg-11 pt-3"
-                        id="sitemap">
-                        <div>UCLA IoES - Water Quality Monitoring with Remote
-                            Sensing</div>
-                        <a href="index.html">Home</a>&nbsp;|
-                        <a href="turbidity-app.html">TurbidityApp</a>&nbsp;|
-                        <a href="tools.html">Tools</a>&nbsp;|
-                        <a href="resources.html">Resources</a>&nbsp;|
-                        <a href="methods.html">Methods</a>&nbsp;|
-                        <a href="library.html">Library</a>&nbsp;|
-                        <a
-                            href="https://github.com/uclaioes/nasa-jpl">GitHub</a>
-                    </div>
-                </div>
-                <div class="row py-3">
-                    <!-- Copyright -->
-                    <div class="col-xs-12 col-md-12 text-center">
-                        <span id="copyright">Copyright 2022 &copy; UCLA
-                            IoES</span>
-                    </div>
-                </div>
-            </div>
-        </footer>
+          </a>
+        </div>
+        <div class="col-xs-12 col-md-10 col-lg-11 pt-3" id="sitemap">
+          <div>UCLA IoES - Water Quality Monitoring with Remote
+            Sensing</div>
+          <a href="index.html">Home</a>&nbsp;|
+          <a href="turbidity-app.html">TurbidityApp</a>&nbsp;|
+          <a href="tools.html">Tools</a>&nbsp;|
+          <a href="resources.html">Resources</a>&nbsp;|
+          <a href="methods.html">Methods</a>&nbsp;|
+          <a href="library.html">Library</a>&nbsp;|
+          <a href="https://github.com/uclaioes/nasa-jpl">GitHub</a>
+        </div>
+      </div>
+      <div class="row py-3">
+        <!-- Copyright -->
+        <div class="col-xs-12 col-md-12 text-center">
+          <span id="copyright">Copyright 2022 &copy; UCLA
+            IoES</span>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-        <!-- JQuery JS -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"></script>
-        <!-- Bootstrap JS -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-        <script
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"></script>
+  <!-- JQuery JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 
 
-    </body>
+</body>
 
 </html>
