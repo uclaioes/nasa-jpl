@@ -43,19 +43,6 @@
 │   ├── restoration.geojson
 │   └── restoration_map.csv
 ├── favicon.ico
-├── icons
-│   ├── eco1.png
-│   ├── eco2-alt.png
-│   ├── eco2.png
-│   ├── eco3.png
-│   ├── grass-line.svg
-│   ├── grass.svg
-│   ├── ioes-alt-caption.svg
-│   ├── seagrass.png
-│   ├── seagrass.svg
-│   ├── shield.svg
-│   ├── wetland.png
-│   └── wetland.svg
 ├── img
 ├── index.html
 ├── js

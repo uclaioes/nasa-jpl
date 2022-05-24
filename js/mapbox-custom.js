@@ -40,7 +40,7 @@ map.addControl(new mapboxgl.NavigationControl({
 map.on('load', function () {
     // Load Custom Icon
     map.loadImage(
-        './icons/seagrass.png',
+        './img/seagrass.png',
         function (error, image) {
             if (error) throw error;
             map.addImage('custom-marker', image);

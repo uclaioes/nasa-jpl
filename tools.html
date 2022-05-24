@@ -1,394 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
 
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description"
-            content="As part of UCLA'S Institute of the Environment and Sustainability, we are researching how certain marine restoration projects, involving kelp forests and seagrass beds, can provide various benefits for both the planet and its inhabitants. Our practicum goal is to establish a scientific communications portal for students and researchers to utilize in future restoration efforts.">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Using remote sensing to monitor antibiotic resistance
+            vectors in Southern California coastal waters">
 
-        <title>Restoration Map | Water Quality Monitoring with Remote Sensing
-        </title>
+  <title>Restoration Map | Water Quality Monitoring with Remote Sensing
+  </title>
 
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-            crossorigin="anonymous">
-        <!-- Fonts -->
-        <link
-            href="https://fonts.googleapis.com/css?family=Overpass&display=swap"
-            rel="stylesheet">
-        <!-- Font Awesome Icons -->
-        <link
-            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-            rel="stylesheet">
-        <!-- Mapbox CSS -->
-        <link href='https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.css'
-            rel='stylesheet'>
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Mapbox CSS -->
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.css' rel='stylesheet'>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" type="text/css">
 
-    </head>
+</head>
 
-    <body>
-        <!-- Navigation -->
-        <div class="container px-0">
-            <nav class="navbar navbar-expand-lg">
-                <!-- Logo -->
-                <a class="navbar-brand" href="index.html">
-                    <img src="icons/ioes-alt-caption.svg" class="img-fluid"
-                        id="logo" alt="UCLA IoES" />
-                </a>
-                <!-- Navigation Toggle -->
-                <button class="navbar-toggler" type="button"
-                    data-toggle="collapse" data-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- Navigation Links -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active"
-                                href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"
-                                href="turbidity-app.html">TurbidityApp</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#"
-                                id="navbarDropdown" data-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false">Explore</a>
-                            <div class="dropdown-menu"
-                                aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item"
-                                    href="methods.html">Methods</a>
-                                <a class="dropdown-item"
-                                    href="library.html">Library</a>
-                                <a class="dropdown-item"
-                                    href="tools.html">Tools</a>
-                                <a class="dropdown-item"
-                                    href="resources.html">Resources</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+<body>
+  <!-- Navigation -->
+  <div class="container">
+    <nav class="navbar navbar-expand-lg">
+      <!-- Logo -->
+      <a class="navbar-brand" href="index.html">
+        <img src="img/ioes-alt-caption.svg" class="img-fluid" id="logo"
+                        alt="UCLA IoES" />
+      </a>
+      <!-- Navigation Toggle -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navigation Links -->
+      <div id="navbarNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="turbidity-app.html">TurbidityApp</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="methods.html">Methods</a></li>
+              <li><a class="dropdown-item" href="library.html">Library</a></li>
+              <li><a class="dropdown-item active" aria-current="page" href="tools.html">Tools</a></li>
+              <li><a class="dropdown-item" href="resources.html">Resources</a></li>
+            </ul>
+      </div>
+      </li>
+      </ul>
+    </nav>
+  </div>
+
+<main class="my-5 container">
+
+  <!-- Map -->
+  <section id="project-map">
+    <div class="container py-3">
+      <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-12">
+
         </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-xs-12 col-md-12 col-lg-11 mx-auto">
+          <!-- 2021 Map -->
+          <h1>Eelgrass Suitability Map</h1>
 
-        <!-- Map -->
-        <section id="project-map">
-            <div class="container py-3">
-                <div class="row">
-                    <div class="col-xs-12 col-md-12 col-lg-12">
-
-                    </div>
+          <div class="row">
+            <div class="col-xs-12 col-md-12">
+              <div class="card bordered">
+                <div class="card-body">
+                  <p class="card-text">
+                    We created this interactive web map
+                    to show the most suitable locations
+                    for eelgrass transplanting in the
+                    Santa Monica Bay. We worked together
+                    with The Bay Foundation to collect
+                    and map a list of variables which
+                    would respresent eelgrass (Zostera
+                    Marina) suitability within Santa
+                    Monica bay. If you are interested in
+                    learning how we created this map
+                    check out our methodology sectiion
+                    in our <a href="https://docs.google.com/document/d/1hV2dvl5aOEObyx6YH8Wekb-ZZHmL-t7gJ-l847Np7Oc/edit?usp=sharing">report</a>
+                    This map was built to be intuitive
+                    and easy to use, if you have any
+                    issues using the map please
+                    reeference our <a href="https://docs.google.com/document/d/1cyDW4LL4rmZ9xUVaLob2382jpZHH84RmrE3IiCU8Lqc/edit?usp=sharing">usage
+                      guide</a>
+                  </p>
                 </div>
-                <div class="row mb-3">
-                    <div class="col-xs-12 col-md-12 col-lg-11 mx-auto">
-                        <!-- 2021 Map -->
-                        <h1>Eelgrass Suitability Map</h1>
-
-                        <div class="row">
-                            <div class="col-xs-12 col-md-12">
-                                <div class="card bordered">
-                                    <div class="card-body">
-                                        <p class="card-text">
-                                            We created this interactive web map
-                                            to show the most suitable locations
-                                            for eelgrass transplanting in the
-                                            Santa Monica Bay. We worked together
-                                            with The Bay Foundation to collect
-                                            and map a list of variables which
-                                            would respresent eelgrass (Zostera
-                                            Marina) suitability within Santa
-                                            Monica bay. If you are interested in
-                                            learning how we created this map
-                                            check out our methodology sectiion
-                                            in our <a
-                                                href="https://docs.google.com/document/d/1hV2dvl5aOEObyx6YH8Wekb-ZZHmL-t7gJ-l847Np7Oc/edit?usp=sharing">report</a>
-                                            This map was built to be intuitive
-                                            and easy to use, if you have any
-                                            issues using the map please
-                                            reeference our <a
-                                                href="https://docs.google.com/document/d/1cyDW4LL4rmZ9xUVaLob2382jpZHH84RmrE3IiCU8Lqc/edit?usp=sharing">usage
-                                                guide</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <style>
-                            .embed-container {
-                                position: relative;
-                                padding-bottom: 80%;
-                                height: 0;
-                                max-width: 100%;
-                            }
-
-                            .embed-container iframe,
-                            .embed-container object,
-                            .embed-container iframe {
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                width: 100%;
-                                height: 100%;
-                            }
-
-                            small {
-                                position: absolute;
-                                z-index: 40;
-                                bottom: 0;
-                                margin-bottom: -15px;
-                            }
-
-                        </style>
-
-                        <div class="embed-container"><small><a
-                                    href="//gisucla.maps.arcgis.com/apps/Embed/index.html?webmap=ba5a023945d14c13a023c5d32bbf036a&extent=-118.8662,33.7285,-118.1082,34.0886&zoom=true&scale=true&legendlayers=true&disable_scroll=false&theme=light"
-                                    style="color:#0000FF;text-align:left"
-                                    target="_blank">View larger
-                                    map</a></small><br><iframe width="500"
-                                height="400" frameborder="0" scrolling="no"
-                                marginheight="0" marginwidth="0"
-                                title="Map with overlaps"
-                                src="//gisucla.maps.arcgis.com/apps/Embed/index.html?webmap=ba5a023945d14c13a023c5d32bbf036a&extent=-118.8662,33.7285,-118.1082,34.0886&zoom=true&previewImage=false&scale=true&legendlayers=true&disable_scroll=false&theme=light"></iframe>
-                        </div>
-
-                        <!--Success Quantification Tool-->
-                        <h2>Success Quantification Tool</h2>
-                        <div class="row">
-                            <div class="col-xs-12 col-md-12">
-                                <div class="card bordered">
-                                    <div class="card-body">
-                                        <p class="card-text">
-                                            To better understand the criteria
-                                            typically used to evaluate the
-                                            success of an eelgrass restoration
-                                            site, and the measurements/values
-                                            associated with those criteria, we
-                                            conducted an in-depth <a
-                                                href="https://docs.google.com/spreadsheets/d/1S0Od5H_7Mtwi8AMllMdM7rM0Q78haTk7w7XpA2TL7dM/edit?usp=sharing">meta-analysis</a>
-                                            of eelgrass restoration projects
-                                            around the world. With the
-                                            information gathered a 3 Star
-                                            ranking system was created with an
-                                            accompanying chart that breaks down
-                                            this ranking based on 3 attributes
-                                            and associated sub-attributes. Our
-                                            hope is to aid in reassessing
-                                            eelgrass restorations that may be
-                                            overlooked and may critically
-                                            require more monitorization than was
-                                            first assumed.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <!-- Project Map -->
-                        <h1>Map of Existing Restoration Sites</h1>
-                        <div id="map" class="bordered"><button type="button"
-                                class="btn" id="reset">Reset</button></div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
+          </div>
 
+          <style>
+            .embed-container {
+              position: relative;
+              padding-bottom: 80%;
+              height: 0;
+              max-width: 100%;
+            }
 
+            .embed-container iframe,
+            .embed-container object,
+            .embed-container iframe {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            }
 
-        <!-- Project Modals -->
-        <div id="project-modals"></div>
+            small {
+              position: absolute;
+              z-index: 40;
+              bottom: 0;
+              margin-bottom: -15px;
+            }
+          </style>
 
-        <!-- Project List -->
-        <section>
-            <div class="container py-3">
-                <div class="row">
-                    <div class="col-xs-12 col-md-12">
-                        <h2>Project List</h2>
-                    </div>
+          <div class="embed-container"><small><a href="//gisucla.maps.arcgis.com/apps/Embed/index.html?webmap=ba5a023945d14c13a023c5d32bbf036a&extent=-118.8662,33.7285,-118.1082,34.0886&zoom=true&scale=true&legendlayers=true&disable_scroll=false&theme=light" style="color:#0000FF;text-align:left" target="_blank">View larger
+                map</a></small><br><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Map with overlaps" src="//gisucla.maps.arcgis.com/apps/Embed/index.html?webmap=ba5a023945d14c13a023c5d32bbf036a&extent=-118.8662,33.7285,-118.1082,34.0886&zoom=true&previewImage=false&scale=true&legendlayers=true&disable_scroll=false&theme=light"></iframe>
+          </div>
+
+          <!--Success Quantification Tool-->
+          <h2>Success Quantification Tool</h2>
+          <div class="row">
+            <div class="col-xs-12 col-md-12">
+              <div class="card bordered">
+                <div class="card-body">
+                  <p class="card-text">
+                    To better understand the criteria
+                    typically used to evaluate the
+                    success of an eelgrass restoration
+                    site, and the measurements/values
+                    associated with those criteria, we
+                    conducted an in-depth <a href="https://docs.google.com/spreadsheets/d/1S0Od5H_7Mtwi8AMllMdM7rM0Q78haTk7w7XpA2TL7dM/edit?usp=sharing">meta-analysis</a>
+                    of eelgrass restoration projects
+                    around the world. With the
+                    information gathered a 3 Star
+                    ranking system was created with an
+                    accompanying chart that breaks down
+                    this ranking based on 3 attributes
+                    and associated sub-attributes. Our
+                    hope is to aid in reassessing
+                    eelgrass restorations that may be
+                    overlooked and may critically
+                    require more monitorization than was
+                    first assumed.
+                  </p>
                 </div>
-                <!-- Projects -->
-                <div class="row" id="project-list"></div>
+              </div>
             </div>
-        </section>
+          </div>
 
-        <!-- Funding Sources -->
-        <section>
-            <div class="container py-3">
-                <div class="row">
-                    <div class="col-xs-12 col-md-12">
-                        <h2>Funding Sources</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div
-                        class="col-xs-12 col-md-12 col-lg-6 mx-auto bg-white bordered">
-                        <p class="p-3">
-                            This graph depicts the various sources of funding
-                            for these projects, illustrating the cooperation
-                            between different levels of government and private
-                            corporations.
-                        </p>
-                        <a href="#" data-target="#funding" data-toggle="modal"
-                            role="button">
-                            <img src="img/funding_pie.png"
+
+
+          <!-- Project Map -->
+          <h1>Map of Existing Restoration Sites</h1>
+          <div id="map" class="bordered"><button type="button" class="btn" id="reset">Reset</button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Project Modals -->
+  <div id="project-modals"></div>
+
+  <!-- Project List -->
+  <section>
+    <div class="container py-3">
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+          <h2>Project List</h2>
+        </div>
+      </div>
+      <!-- Projects -->
+      <div class="row" id="project-list"></div>
+    </div>
+  </section>
+
+  <!-- Funding Sources -->
+  <section>
+    <div class="container py-3">
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+          <h2>Funding Sources</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-6 mx-auto bg-white bordered">
+          <p class="p-3">
+            This graph depicts the various sources of funding
+            for these projects, illustrating the cooperation
+            between different levels of government and private
+            corporations.
+          </p>
+          <a href="#" data-target="#funding" data-toggle="modal" role="button">
+            <img src="img/funding_pie.png"
                                 class="img-fluid zoom-in"
                                 alt="Funding Sources" />
-                        </a>
-                        <!-- Modal -->
-                        <div class="modal fade" id="funding" tabindex="-1"
-                            role="dialog" aria-hidden="true">
-                            <div class="modal-dialog modal-lg" role="document">
-                                <div class="modal-content">
-                                    <div class='modal-header'>
-                                        <div class='modal-title'>Funding Sources
-                                        </div><button type='button'
-                                            class='close' data-dismiss='modal'
-                                            aria-label='Close'><span
-                                                aria-hidden='true'>&times;</span></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>
-                                            This graph depicts the various
-                                            sources of funding for these
-                                            projects, illustrating the
-                                            cooperation between different levels
-                                            of government and private
-                                            corporations.
-                                        </p>
-                                        <img src="img/funding_pie.png"
+          </a>
+          <!-- Modal -->
+          <div class="modal fade" id="funding" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class='modal-header'>
+                  <div class='modal-title'>Funding Sources
+                  </div><button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    This graph depicts the various
+                    sources of funding for these
+                    projects, illustrating the
+                    cooperation between different levels
+                    of government and private
+                    corporations.
+                  </p>
+                  <img src="img/funding_pie.png"
                                             class="img-fluid"
                                             alt="Funding Sources" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
+              </div>
             </div>
-            </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
 
-        <!-- Footer -->
-        <div id="seagrass"></div>
-        <footer>
-            <div class="container pt-4">
-                <div class="row">
-                    <!-- Logo -->
-                    <div class="col-xs-12 col-md-2 col-lg-1 pt-3">
-                        <a href="index.html">
-                            <img src="icons/ioes-short.svg" id="logo-short"
+</main>
+
+  <!-- Footer -->
+  <div id="seagrass"></div>
+  <footer>
+    <div class="container pt-4">
+      <div class="row">
+        <!-- Logo -->
+        <div class="col-xs-12 col-md-2 col-lg-1 pt-3">
+          <a href="index.html">
+            <img src="img/ioes-short.svg" id="logo-short"
                                 alt="UCLA IoES" />
-                        </a>
-                    </div>
-                    <div class="col-xs-12 col-md-10 col-lg-11 pt-3"
-                        id="sitemap">
-                        <div>UCLA IoES - Water Quality Monitoring with Remote
-                            Sensing</div>
-                        <a href="index.html">Home</a>&nbsp;|
-                        <a href="turbidity-app.html">TurbidityApp</a>&nbsp;|
-                        <a href="tools.html">Tools</a>&nbsp;|
-                        <a href="resources.html">Resources</a>&nbsp;|
-                        <a href="methods.html">Methods</a>&nbsp;|
-                        <a href="library.html">Library</a>&nbsp;|
-                        <a
-                            href="https://github.com/uclaioes/nasa-jpl">GitHub</a>
-                    </div>
-                </div>
-                <div class="row py-3">
-                    <!-- Copyright -->
-                    <div class="col-xs-12 col-md-12 text-center">
-                        <span id="copyright">Copyright 2022 &copy; UCLA
-                            IoES</span>
-                    </div>
-                </div>
-            </div>
-        </footer>
+          </a>
+        </div>
+        <div class="col-xs-12 col-md-10 col-lg-11 pt-3" id="sitemap">
+          <div>UCLA IoES - Water Quality Monitoring with Remote
+            Sensing</div>
+          <a href="index.html">Home</a>&nbsp;|
+          <a href="turbidity-app.html">TurbidityApp</a>&nbsp;|
+          <a href="tools.html">Tools</a>&nbsp;|
+          <a href="resources.html">Resources</a>&nbsp;|
+          <a href="methods.html">Methods</a>&nbsp;|
+          <a href="library.html">Library</a>&nbsp;|
+          <a href="https://github.com/uclaioes/nasa-jpl">GitHub</a>
+        </div>
+      </div>
+      <div class="row py-3">
+        <!-- Copyright -->
+        <div class="col-xs-12 col-md-12 text-center">
+          <span id="copyright">Copyright 2022 &copy; UCLA
+            IoES</span>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-        <!-- JQuery JS -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"></script>
-        <!-- Bootstrap JS -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-        <script
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"></script>
-        <!-- Mapbox JS -->
-        <script
-            src='https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.js'></script>
-        <!-- Map JS -->
-        <script src="js/mapbox-custom.js"></script>
-        <!-- Project List JS -->
-        <script>
-            // Load Project List Data
-            var projectdata = $.getJSON("data/restoration.geojson", function (projectdata) {
-                // Generate HTML Elements
-                projectdata.features.forEach(function (e) {
+  <!-- JQuery JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
-                    // Create Project Modals
-                    document.getElementById("project-modals").innerHTML += "<div class='modal fade' id='projectModal" + e.properties.id + "' tabindex='-1' role='dialog' aria-hidden='true'><div class='modal-dialog' role='document'><div class='modal-content bordered'><div class='modal-header'><div class='modal-title'>" + e.properties.Name + "</div><button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></button></div><div class='modal-body mb-2'><div class='institute'>" + e.properties.Institute + "</div><div class='mb-2'>" + e.properties.Year + "</div><p>" + e.properties.Description + "</p><div class='alt pb-3'><u>Funding by:</u>&nbsp;&nbsp;" + e.properties.Clients + "</div><a href='" + e.properties.Link + "' target='_blank' class='btn btn-outline-primary''>Learn More</a></div></div></div></div>";
+  <!-- Mapbox JS -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.js'></script>
+  <!-- Map JS -->
+  <script src="js/mapbox-custom.js"></script>
+  <!-- Project List JS -->
+  <script>
+    // Load Project List Data
+    var projectdata = $.getJSON("data/restoration.geojson", function(projectdata) {
+      // Generate HTML Elements
+      projectdata.features.forEach(function(e) {
 
-                    // Create Project List
-                    document.getElementById("project-list").innerHTML += "<div class='col-xs-12 col-lg-6 mb-3'><div class='card bordered'><div class='card-body'><div class='card-title'><a href='#project" + e.properties.id + "' onclick='scrollToElement();' data-toggle='collapse' role='button' aria-expanded='false' aria-controls='project" + e.properties.id + "'>" + e.properties.Name + "</a></div><div class='collapse' id='project" + e.properties.id + "'><div class='institute'>" + e.properties.Institute + "</div><div class='mb-2'>" + e.properties.Year + "</div><p class='card-text'>" + e.properties.Description + "</p><div class='alt pb-3'><u>Funding by:</u>&nbsp;&nbsp;" + e.properties.Clients + "</div><a href='" + e.properties.Link + "' target='_blank' class='btn btn-outline-primary''>Learn More</a><a href='#project-map' class='btn btn-outline-primary ml-3' onclick='viewOnMap(this)' data-id='' data-center='" + e.geometry.coordinates + "' data-name='" + e.properties.Name + "' data-ecosystem='" + e.properties.Ecosystem + "' data-year='" + e.properties.Year + "'>View on Map</a></div></div></div></div>";
-                });
-            });
+        // Create Project Modals
+        document.getElementById("project-modals").innerHTML += "<div class='modal fade' id='projectModal" + e.properties.id + "' tabindex='-1' role='dialog' aria-hidden='true'><div class='modal-dialog' role='document'><div class='modal-content bordered'><div class='modal-header'><div class='modal-title'>" + e.properties.Name + "</div><button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></button></div><div class='modal-body mb-2'><div class='institute'>" + e.properties.Institute + "</div><div class='mb-2'>" + e.properties.Year + "</div><p>" + e.properties.Description + "</p><div class='alt pb-3'><u>Funding by:</u>&nbsp;&nbsp;" + e.properties.Clients + "</div><a href='" + e.properties.Link + "' target='_blank' class='btn btn-outline-primary''>Learn More</a></div></div></div></div>";
 
-            // Scroll to card on click
-            function scrollToElement () {
-                var $window = $(window);
-                var $element = $(event.currentTarget.getAttribute('href'));
-                var $card = $($element).parent().parent();
-                var elementTop = $($card).offset().top;
-                // var elementHeight = $($element).height();
-                // var viewportHeight = $($window).height();
-                // var scrollIt = elementTop - ((viewportHeight - elementHeight) / 2);
-                $('html,body').animate({
-                    scrollTop: elementTop
-                }, 500);
-            };
+        // Create Project List
+        document.getElementById("project-list").innerHTML += "<div class='col-xs-12 col-lg-6 mb-3'><div class='card bordered'><div class='card-body'><div class='card-title'><a href='#project" + e.properties.id + "' onclick='scrollToElement();' data-toggle='collapse' role='button' aria-expanded='false' aria-controls='project" + e.properties.id + "'>" + e.properties.Name + "</a></div><div class='collapse' id='project" + e.properties.id + "'><div class='institute'>" + e.properties.Institute + "</div><div class='mb-2'>" + e.properties.Year + "</div><p class='card-text'>" + e.properties.Description + "</p><div class='alt pb-3'><u>Funding by:</u>&nbsp;&nbsp;" + e.properties.Clients + "</div><a href='" + e.properties.Link + "' target='_blank' class='btn btn-outline-primary''>Learn More</a><a href='#project-map' class='btn btn-outline-primary ml-3' onclick='viewOnMap(this)' data-id='' data-center='" + e.geometry.coordinates + "' data-name='" + e.properties.Name + "' data-ecosystem='" + e.properties.Ecosystem + "' data-year='" + e.properties.Year + "'>View on Map</a></div></div></div></div>";
+      });
+    });
 
-            // View point on map on click
-            function viewOnMap (viewMapButton) {
-                // Set Variables
-                // var id = $(viewMapButton).data('id');
-                // var name = $(viewMapButton).data('name');
-                // var ecosystem = $(viewMapButton).data('ecosystem');
-                // var year = $(viewMapButton).data('year');
-                // Coordinates
-                var pointCenter = $(viewMapButton).data('center');
-                var lngLat = pointCenter.split(",");
-                var pointLng = parseFloat(lngLat[0]);
-                var pointLat = parseFloat(lngLat[1]);
-                // Map flyTo
-                map.flyTo({
-                    center: [pointLng, pointLat],
-                    zoom: 10
-                });
+    // Scroll to card on click
+    function scrollToElement() {
+      var $window = $(window);
+      var $element = $(event.currentTarget.getAttribute('href'));
+      var $card = $($element).parent().parent();
+      var elementTop = $($card).offset().top;
+      // var elementHeight = $($element).height();
+      // var viewportHeight = $($window).height();
+      // var scrollIt = elementTop - ((viewportHeight - elementHeight) / 2);
+      $('html,body').animate({
+        scrollTop: elementTop
+      }, 500);
+    };
 
-                // Smooth scroll
-                scrollToElement();
-            };
-        </script>
+    // View point on map on click
+    function viewOnMap(viewMapButton) {
+      // Set Variables
+      // var id = $(viewMapButton).data('id');
+      // var name = $(viewMapButton).data('name');
+      // var ecosystem = $(viewMapButton).data('ecosystem');
+      // var year = $(viewMapButton).data('year');
+      // Coordinates
+      var pointCenter = $(viewMapButton).data('center');
+      var lngLat = pointCenter.split(",");
+      var pointLng = parseFloat(lngLat[0]);
+      var pointLat = parseFloat(lngLat[1]);
+      // Map flyTo
+      map.flyTo({
+        center: [pointLng, pointLat],
+        zoom: 10
+      });
+
+      // Smooth scroll
+      scrollToElement();
+    };
+  </script>
 
 
 
-    </body>
+</body>
 
 </html>
