@@ -2,29 +2,29 @@
 :root {
 	--font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
 	--font-family-display: var(--font-family);
-	
+
 	--ucla-gold: #ffd100;
 	--ucla-darker-gold: #ffc72c;
 	--ucla-darkest-gold: #ffb81c;
-	
+
 	--ucla-blue: #2774ae;
 	--ucla-lightest-blue: #daebfe;
 	--ucla-lighter-blue: #8bb8e8;
 	--ucla-darker-blue: #005587;
 	--ucla-darkest-blue: #003b5c;
-	
+
 	--seagreen: #57d69c;
 	--green: #3f7d35;
 	--light-green: #79ab6f;
 	--lightest-green: #a0c997;
-	
+
 	--white: #fff;
 	--light-grey: #e6e6e6;
 	--grey: #999;
 	--dark-grey: #666;
 	--darkest-grey: #333;
 	--black: #000;
-	
+
 	/* bootstrap overrides */
 
 
@@ -43,84 +43,38 @@ body {
 	font-weight: 400;
 }
 
-strong, b {
+strong,
+b {
 	font-weight: 600;
 }
 
-.alt {
-	font-size: 0.9rem;
-	color: var(--dark-grey);
-}
-
-
-.bordered {
-	border: 3px solid;
-	border-color: var(--lightest-green);
-	border-radius: 0;
-}
-
-img.zoom-in {
-	cursor: -moz-zoom-in;
-	cursor: -webkit-zoom-in;
-	cursor: zoom-in;
-}
-
-.caption {
-	font-size: 0.9rem;
+footer {
 	color: var(--white);
+	background: url(../img/stock/Lake_MacKay_Australia.jpg) no-repeat;
+	margin-top: 170px;
 }
 
-.caption a {
-	color: var(--ucla-lightest-blue);
-	text-decoration: underline;
+footer .ioes-logo {
+	width: 300px;
 }
 
-.caption a:hover {
+footer #sitemap a {
+	color: var(--ucla-lighter-blue);
+}
+
+footer #sitemap a:hover {
 	color: var(--lightest-green);
+	text-decoration: none;
 }
 
 
-/** Hyperlinks **/
-a {
-	color: var(--ucla-blue);
-}
 
-a:hover {
-	color: var(--ucla-darkest-blue);
-}
-
-a.active {
-	color: var(--light-green);
-}
-
-/** Buttons **/
-.btn-outline-primary {
-	color: var(--ucla-darker-blue);
-	border-color: var(--ucla-darker-blue);
-}
-
-.btn-outline-primary:hover {
-	background: var(--light-green);
-	border-color: var(--light-green);
-	color: var(--white);
-}
-
-.btn-outline-secondary {
-	color: var(--white);
-	border-color: var(--white);
-}
-
-.btn-outline-secondary:hover {
-	background: var(--light-green);
-	border-color: var(--light-green);
-	color: var(--white);
-}
 
 /** Headings **/
 h1,
 h2 {
 	color: var(--white);
-	font-weight: bold;
+	font-weight: 600;
 	text-align: center;
 	text-decoration: underline;
 	text-decoration-color: var(--lightest-green);
@@ -137,6 +91,32 @@ h2 {
 h3 {
 	font-size: 1.5rem;
 }
+
+/** Hyperlinks **/
+a {
+	color: var(--ucla-blue);
+}
+
+a:hover {
+	color: var(--ucla-darkest-blue);
+}
+
+a.active {
+	color: var(--light-green);
+}
+
+.alt {
+	font-size: 0.9rem;
+	color: var(--dark-grey);
+}
+
+
+.bordered {
+	border: 3px solid;
+	border-color: var(--lightest-green);
+	border-radius: 0;
+}
+
 
 /** Navigation Bar **/
 .navbar #logo {
@@ -361,22 +341,27 @@ h3 {
 }
 
 
-footer {
+
+
+/** Buttons **/
+.btn-outline-primary {
+	color: var(--ucla-darker-blue);
+	border-color: var(--ucla-darker-blue);
+}
+
+.btn-outline-primary:hover {
+	background: var(--light-green);
+	border-color: var(--light-green);
 	color: var(--white);
-	background: url(../img/stock/Lake_MacKay_Australia.jpg) no-repeat;
-	margin-top: 170px;
 }
 
-footer .ioes-logo {
-	width: 300px;
+.btn-outline-secondary {
+	color: var(--white);
+	border-color: var(--white);
 }
 
-footer #sitemap a {
-	color: var(--ucla-lighter-blue);
+.btn-outline-secondary:hover {
+	background: var(--light-green);
+	border-color: var(--light-green);
+	color: var(--white);
 }
-
-footer #sitemap a:hover {
-	color: var(--lightest-green);
-	text-decoration: none;
-}
-
