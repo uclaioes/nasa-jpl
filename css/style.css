@@ -24,6 +24,9 @@
 	--dark-grey: #666;
 	--darkest-grey: #333;
 	--black: #000;
+	
+	/* bootstrap overrides */
+
 
 }
 
@@ -40,9 +43,8 @@ body {
 	font-weight: 400;
 }
 
-
-.full-screen {
-	height: 100vh;
+strong, b {
+	font-weight: 600;
 }
 
 .alt {
@@ -50,9 +52,11 @@ body {
 	color: var(--dark-grey);
 }
 
+
 .bordered {
 	border: 3px solid;
 	border-color: var(--lightest-green);
+	border-radius: 0;
 }
 
 img.zoom-in {
