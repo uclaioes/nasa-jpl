@@ -1,25 +1,30 @@
 /** Styling Variables **/
 :root {
+	--font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+	--font-family-display: var(--font-family);
+	
 	--ucla-gold: #ffd100;
 	--ucla-darker-gold: #ffc72c;
 	--ucla-darkest-gold: #ffb81c;
+	
 	--ucla-blue: #2774ae;
 	--ucla-lightest-blue: #daebfe;
 	--ucla-lighter-blue: #8bb8e8;
 	--ucla-darker-blue: #005587;
 	--ucla-darkest-blue: #003b5c;
+	
 	--seagreen: #57d69c;
 	--green: #3f7d35;
 	--light-green: #79ab6f;
 	--lightest-green: #a0c997;
+	
 	--white: #fff;
 	--light-grey: #e6e6e6;
 	--grey: #999;
 	--dark-grey: #666;
 	--darkest-grey: #333;
 	--black: #000;
-	--font-family: 'Overpass', Helvetica, Arial, sans-serif;
-	--font-family-display: var(--font-family);
+
 }
 
 /** Webpage **/
