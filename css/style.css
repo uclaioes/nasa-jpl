@@ -351,7 +351,10 @@ li.media 	{
 	color: var(--dark-grey);
 }
 
-/** Seagrass **/
+footer {
+	display: grid;
+}
+
 #sentinel2 {
 	display: flex;
 	justify-content: right;
@@ -359,7 +362,6 @@ li.media 	{
 
 .sentinel {
 	max-width: 30vw;
-
 }
 
 footer a {
