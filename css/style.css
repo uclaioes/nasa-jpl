@@ -50,7 +50,6 @@ b {
 
 footer {
 	color: var(--white);
-	background: url(../img/stock/Lake_MacKay_Australia.jpg) no-repeat;
 	margin-top: 170px;
 }
 
@@ -73,27 +72,28 @@ footer #sitemap a:hover {
 /** Headings **/
 h1,
 h2 {
-	color: var(--white);
+	color: white;
 	font-weight: 600;
-	text-align: center;
-	text-decoration-color: var(--lightest-green);
 	margin-bottom: 1em;
 }
 
 h1 {
+
 	font-size: 1.953rem;
+	text-align: center;
 }
 
 h2 {
+	margin-top: 1.2em;
 	font-size: 1.563rem;
-	
+	text-align: center;
 }
 
 h3 {
 	margin-top: 1em;
 	font-size: 1.25rem;
 	color: var(--green);
-	padding-bottom: .2em;
+	padding-bottom: .1em;
 	border-bottom: 1px solid var(--green);
 }
 
@@ -280,6 +280,10 @@ a.active {
 	top: 0;
 }
 
+li.media 	{
+	list-style: none;
+}
+
 #libraryNav .list-group-item {
 	color: var(--ucla-darker-blue);
 	border-color: var(--ucla-darker-blue);
@@ -293,6 +297,8 @@ a.active {
 
 #library h2 {
 	color: var(--darkest-grey);
+	text-align: left;
+	margin-bottom: 0;
 }
 
 #library h3 {
@@ -347,8 +353,13 @@ a.active {
 
 /** Seagrass **/
 #sentinel2 {
-	right: 0;
-	height: 300px;
+	display: flex;
+	justify-content: right;
+}
+
+.sentinel {
+	max-width: 30vw;
+
 }
 
 
