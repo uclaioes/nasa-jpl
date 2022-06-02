@@ -90,7 +90,11 @@ h2 {
 }
 
 h3 {
+	margin-top: 1em;
 	font-size: 1.25rem;
+	color: var(--green);
+	padding-bottom: .2em;
+	border-bottom: 1px solid var(--green);
 }
 
 /** Hyperlinks **/
@@ -116,6 +120,12 @@ a.active {
 	border: 3px solid;
 	border-color: var(--lightest-green);
 	border-radius: 0;
+}
+
+.equation {
+	display: block;
+	max-width: 100%;
+	object-fit: contain;
 }
 
 
