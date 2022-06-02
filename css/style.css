@@ -362,6 +362,13 @@ li.media 	{
 
 }
 
+footer a {
+	color: white;
+}
+
+footer a:hover {
+	color: var(--light-green);
+}
 
 
 
