@@ -309,16 +309,11 @@ li.media 	{
 
 footer {
 	display: grid;
+	grid-template-columns: 1fr;
+
 }
 
-#sentinel2 {
-	display: flex;
-	justify-content: right;
-}
 
-.sentinel {
-	max-width: 30vw;
-}
 
 footer a {
 	color: white;
@@ -328,6 +323,23 @@ footer a:hover {
 	color: var(--light-green);
 }
 
+footer > div {
+	grid-column: 1 / -1;
+	grid-row: 1;
+	z-index: 1;
+	align-items: end;
+}
+.satellite {
+	grid-column: 1 / -1;
+	grid-row: 1;
+	z-index: 2;
+	display: flex;
+	justify-content: right;
+}
+
+.sentinel {
+	max-width: 30vw;
+}
 
 
 /** Buttons **/
