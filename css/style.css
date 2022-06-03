@@ -56,7 +56,8 @@ footer {
 }
 
 footer .ioes-logo {
-	width: 300px;
+	min-width: 300px;
+	max-width: 450px;
 }
 
 

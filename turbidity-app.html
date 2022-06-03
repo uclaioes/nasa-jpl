@@ -1,113 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <title>Home | Results </title>
-  <meta name="description" content="TurbidityApp built by Albert Cao">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <title>Home | Results </title>
+    <meta name="description" content="TurbidityApp built by Albert Cao">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap CSS -->
-  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
- 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet"> 
-  
-  <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
 
-<body>
-  <!-- Navigation -->
-  <div class="container">
-    <nav class="navbar navbar-expand-lg">
-      <!-- Logo -->
-      <a class="navbar-brand" href="index.html">
-        <img src="img/ioes-alt-caption.svg" class="img-fluid" id="logo" alt="UCLA IoES" />
-      </a>
-      <!-- Navigation Toggle -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Navigation Links -->
-      <div id="navbarNav" class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="turbidity-app.html">Results</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore</a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="methods.html">Methods</a></li>
-              <li><a class="dropdown-item" href="library.html">Library</a></li>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 
-              <li><a class="dropdown-item" href="resources.html">Resources</a></li>
-            </ul>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="img/ioes-alt-caption.svg" class="img-fluid" id="logo" alt="UCLA IoES" />
+        </a>
+        <!-- Navigation Toggle -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navigation Links -->
+        <div id="navbarNav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="turbidity-app.html">Results</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="methods.html">Methods</a></li>
+                <li><a class="dropdown-item" href="library.html">Library</a></li>
+
+                <li><a class="dropdown-item" href="resources.html">Resources</a></li>
+              </ul>
+        </div>
+        </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="my-5">
+      <!--Introduction -->
+      <h1>Results</h1>
+
+      <div class="card">
+        <div class="card-body">
+          <iframe style="height: 100vh;" width="100%" height="100%" src="https://caoalbert.shinyapps.io/TurbidityApp/" title="TurbidityApp"></iframe>
+          <p>Add scroll for horizontal and vertical</p>
+          <p><a href="https://github.com/caoalbert/TurbidityApp">Github Repo to view code</a></p>
+
+        </div>
       </div>
-      </li>
-      </ul>
-    </nav>
-  </div>
 
-  <main class="my-5">
-    <!--Introduction -->
-    <h1>Results</h1>
 
-    <div class="card">
-      <div class="card-body">
-        <iframe style="height: 100vh;" width="100%" height="100%" src="https://caoalbert.shinyapps.io/TurbidityApp/" title="TurbidityApp"></iframe>
-        <p>Add scroll for horizontal and vertical</p>
-        <p><a href="https://github.com/caoalbert/TurbidityApp">Github Repo to view code</a></p>
+    </main>
 
+
+
+
+    <!-- Footer -->
+    <footer class="container pt-4">
+      <div>
+        <p class="mb-4"><a href="https://www.ioes.ucla.edu/">
+            <img src="img/ucla-ioes-logo.svg" class="ioes-logo" alt="UCLA IoES" />
+          </a></p>
+        <p>UCLA IoES - Water Quality Monitoring with Remote
+          Sensing</p>
+        <p><a href="index.html">Home</a>&nbsp;|
+          <a href="turbidity-app.html">Results</a>&nbsp;|
+          <a href="resources.html">Resources</a>&nbsp;|
+          <a href="methods.html">Methods</a>&nbsp;|
+          <a href="library.html">Library</a>&nbsp;|
+          <a href="https://github.com/uclaioes/nasa-jpl">GitHub</a>
+        </p>
+
+        <p><small>Copyright 2022 &copy; UCLA IoES</small></p>
       </div>
-    </div>
+      <div class="satellite">
+        <img src="img/sentinel2.png" class="sentinel">
+      </div>
+    </footer>
 
+    <!-- JQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-  </main>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+            integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
 
-
-  <!-- Footer -->
-  <footer class="container pt-4">
-    <div>
-      <p class="mb-4"><a href="index.html">
-        <img src="img/ucla-ioes-logo.svg" class="ioes-logo" alt="UCLA IoES" />
-      </a></p>
-      <p>UCLA IoES - Water Quality Monitoring with Remote
-        Sensing</p>
-      <p><a href="index.html">Home</a>&nbsp;|
-      <a href="turbidity-app.html">Results</a>&nbsp;|
-      <a href="resources.html">Resources</a>&nbsp;|
-      <a href="methods.html">Methods</a>&nbsp;|
-      <a href="library.html">Library</a>&nbsp;|
-      <a href="https://github.com/uclaioes/nasa-jpl">GitHub</a></p>
-   
-      <p><small>Copyright 2022 &copy; UCLA IoES</small></p>
-    </div>
-    <div class="satellite">
-      <img src="img/sentinel2.png" class="sentinel">
-    </div>
-</footer>
-
-  <!-- JQuery JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 
 
-</body>
+  </body>
 
 </html>
